@@ -8,6 +8,9 @@ export BITRISE_IPA_PATH=${BITRISE_IPA_PATH}
 export APPALOOSA_API_KEY=${APPALOOSA_API_KEY}
 export SCREENSHOT_1=${SCREENSHOT_1}
 
+source .bashrc
+
+echo 'ENV :'
 env
 
 exit 0
