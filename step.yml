@@ -6,9 +6,9 @@ description: |
   
   This Step requires an Appaloosa-Store account.
   To register an Appaloosa-Store account, [click here](http://appaloosa-store.com/).
-website: https://github.com/appaloosa_bitrise
+website: https://github.com/yyaegash/appaloosa_bitrise
 source:
-  git: https://github.com/bitrise-io/steps-amazon-s3-deploy.git
+  git: https://github.com/yyaegash/appaloosa_bitrise.git
 host_os_tags:
   - osx-10.9
   - osx-10.10
@@ -27,10 +27,17 @@ inputs:
     is_required: true
     value: "$BITRISE_IPA_PATH"
   -
+    title: "APPALOOSA API Key"
+    mapped_to: APPALOOSA_API_KEY
+    is_expand: true
+    is_required: true
+    value: $APPALOOSA_API_KEY
+  -
     title: "screenshoot 1"
     mapped_to: SCREENSHOT_1
     is_expand: true
     is_required: false
+    value: $SCREENSHOT_1
   - 
     title: "screenshoot 2"
     mapped_to: SCREENSHOT_2
@@ -76,6 +83,9 @@ outputs:
     title: "Binary path"
     mapped_to: APPALOOSA_DEPLOY_IPA
   - 
+    title: "api key"
+    mapped_to: APPALOOSA_API_KEY
+  - 
     title: "SCREENSHOT_1"
     mapped_to: SCREENSHOT_1
   - 
@@ -91,8 +101,8 @@ outputs:
     title: "SCREENSHOT_5"
     mapped_to: SCREENSHOT_5
   - 
-    title: "INCON"
-    mapped_to: INCON
+    title: "ICON"
+    mapped_to: ICON
   - 
     title: "BANNER"
     mapped_to: BANNER
