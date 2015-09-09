@@ -8,6 +8,6 @@ export BITRISE_IPA_PATH=${BITRISE_IPA_PATH}
 export APPALOOSA_API_KEY=${APPALOOSA_API_KEY}
 export SCREENSHOT_1=${SCREENSHOT_1}
 
-env
+curl -H "Content-Type: application/json" -X POST --data '{ store_id": 23, "application": { "binary_path": "http://127.0.0.1:8080/Infini.ipa", "screenshot1": ENV["SCREENSHOT_1"]}}' http://appaloosa-int.herokuapp.com//api/v1/23/applications/upload?api_key=ENV['APPALOOSA_API_KEY']
 
 exit 0
