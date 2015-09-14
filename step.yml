@@ -25,90 +25,36 @@ inputs:
     mapped_to: BITRISE_IPA_PATH
     is_expand: true
     is_required: true
-    value: "$BITRISE_IPA_PATH"
+    value: ''
   -
     title: "APPALOOSA API Key"
     mapped_to: APPALOOSA_API_KEY
     is_expand: true
     is_required: true
-    value: $APPALOOSA_API_KEY
+    value: ''
   -
-    title: "screenshoot 1"
-    mapped_to: SCREENSHOT_1
-    is_expand: true
-    is_required: false
-    value: $SCREENSHOT_1
-  - 
-    title: "screenshoot 2"
-    mapped_to: SCREENSHOT_2
-    is_expand: true
-    is_required: false
-  -
-    title: "screenshoot 3"
-    mapped_to: SCREENSHOT_3
-    is_expand: true
-    is_required: false
-  -
-    title: "screenshoot 4"
-    mapped_to: SCREENSHOT_4
-    is_expand: true
-    is_required: false
-  -
-    title: "screenshoot 5"
-    mapped_to: SCREENSHOT_5
-    is_expand: true
-    is_required: false
-  - 
-    title: "icon"
-    mapped_to: ICON
-    is_expand: true
-    is_required: false
-  -
-    title: "banner"
-    mapped_to: BANNER
-    is_expand: true
-    is_required: false
-  -
-    title: "description"
+    title: "DESCRIPTION"
     mapped_to: DESCRIPTION
     is_expand: true
-    is_required: false
+    is_required: true
+    value: ''
   -
-    title: "catchphrase"
-    mapped_to: CATCHPRASE
+    title: "Store ID"
+    mapped_to: STORE_ID
     is_expand: true
-    is_required: false
+    is_required: true
+    value: ''
 outputs:
   - 
     title: "Binary path"
-    mapped_to: APPALOOSA_DEPLOY_IPA
+    mapped_to: BITRISE_IPA_PATH
   - 
-    title: "api key"
+    title: "$APPALOOSA_API_KEY"
     mapped_to: APPALOOSA_API_KEY
   - 
-    title: "SCREENSHOT_1"
-    mapped_to: SCREENSHOT_1
-  - 
-    title: "SCREENSHOT_2"
-    mapped_to: SCREENSHOT_2
-  - 
-    title: "SCREENSHOT_3"
-    mapped_to: SCREENSHOT_3
-  - 
-    title: "SCREENSHOT_4"
-    mapped_to: SCREENSHOT_4
-  - 
-    title: "SCREENSHOT_5"
-    mapped_to: SCREENSHOT_5
-  - 
-    title: "ICON"
-    mapped_to: ICON
-  - 
-    title: "BANNER"
-    mapped_to: BANNER
-  - 
-    title: "CATCHPRASE"
-    mapped_to: CATCHPRASE
-  - 
-    title: "DESCRIPTION"
+    title: "$DESCRIPTION"
     mapped_to: DESCRIPTION
+  - 
+    title: "$STORE_ID"
+    mapped_to: STORE_ID
+
