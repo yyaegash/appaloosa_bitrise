@@ -39,6 +39,12 @@ inputs:
     is_required: true
     value: ''
   -
+    title: "GROUP_IDS"
+    mapped_to: GROUP_IDS
+    is_expand: true
+    is_required: true
+    value: ''
+  - 
     title: "Store ID"
     mapped_to: STORE_ID
     is_expand: true
@@ -57,4 +63,7 @@ outputs:
   - 
     title: "$STORE_ID"
     mapped_to: STORE_ID
+  -
+    title: "$GROUP_IDS"
+    mapped_to: GROUP_IDS
 
