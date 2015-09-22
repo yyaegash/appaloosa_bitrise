@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Variables setted"
-echo "Binary path:  ${BITRISE_IPA_PATH}"
-echo "Description:  ${DESCRIPTION}"
-echo "GROUP_IDS  :  ${GROUP_IDS}"
-echo "API Key    :  ${APPALOOSA_API_KEY}"
+echo "Variables set"
+echo "BINARY PATH:  ${BITRISE_IPA_PATH}"
+echo "DESCRIPTION:  ${DESCRIPTION}"
+echo "GROUP IDS  :  ${GROUP_IDS}"
+echo "API KEY    :  ${APPALOOSA_API_KEY}"
 
 
 
