@@ -27,7 +27,7 @@ inputs:
     is_required: true
     value: ''
   -
-    title: "APPALOOSA API Key"
+    title: "APPALOOSA_API_KEY"
     mapped_to: APPALOOSA_API_KEY
     is_expand: true
     is_required: true
